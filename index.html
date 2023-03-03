@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Home | Bruno Espino</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/terminal-solid.svg">
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Bruno Espino</a></h1>
+					<p>DevOps Engineer
+						<br>
+					I focus on cloud, security and networking </p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About</a></li>
+						<li><a href="#two">Things I Can Do</a></li>
+						<li><a href="#three">Certifications</a></li>
+						<li><a href="#four">Website Workflow</a></li>
+					</ul>
+				</nav>
+				<footer class="headerfoot">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/brunoespino/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/bruno-espino" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:brunoespi7@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<p>
+						You are visitor number:
+					<span id="counter"></span>
+					</p>
+					<script>
+						const URL='https://q20b8pzovf.execute-api.us-east-1.amazonaws.com/Prod'
+						fetch(URL, {
+							method: "POST",
+							mode: "cors",
+						})
+						.then((response) => response.json())
+						.then((data) => { 
+							document.getElementById("counter").innerText = data
+						})
+						</script>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="center">
+									<img src="images/banner.jpg" alt="" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2>Hi there!</h2>
+										<p>Welcome to my website</p>
+									</header>
+									<p>My name is Bruno and I'm 22 years old. I'm an IT professional with a focus in cloud technologies based in Uruguay. I'm passionate about staying up-to-date on the latest developments in cloud technology and using my knowledge to help businesses and organizations achieve their goals.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Things I Can Do</h3>
+									<p>These are some of my top skills, the ones  that capture my interest the most and I remain eager to expand my knowledge.</p>
+									<ul class="feature-icons">
+										<li class="icon solid fa-cloud">Cloud Computing</li>
+										<li class="icon solid fa-box">Containerization</li>
+										<li class="icon solid fa-code">Infrastructure as Code</li>
+										<li class="icon solid fa-network-wired">Networking</li>
+										<li class="icon solid fa-lock">Cloud Security</li>
+										<li class="icon solid fa-code-branch">GitOps</li>
+										
+									</ul>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Certifications</h3>
+									<div class="features">
+										<article>
+											<a href="https://www.credly.com/badges/b6f08d5b-06d9-49d0-aa98-22fac634bfc6/public_url" target="_blank" class="image"><img src="images/aws-certified-solutions-architect-associate.png" alt="AWS Certified Solutions Architect – Associate" /></a>
+											<div class="inner">
+												<h4> AWS Certified Solutions Architect – Associate</h4>
+												<p>Expires on March 29, 2025</p>
+											</div>
+										</article>
+										<article>
+											<a href="https://www.credly.com/badges/a8b61975-e916-445c-b6a7-cec8e41f0271/public_url" target="_blank" class="image"><img src="images/aws-certified-security-specialty.png" alt="AWS Certified Security – Specialty" /></a>
+											<div class="inner">
+												<h4>AWS Certified Security – Specialty</h4>
+												<p>Expires on November 26, 2025</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four">
+								<div class="container">
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+						</div>
+					</section>
+						</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
