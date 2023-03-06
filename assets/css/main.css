@@ -3132,3 +3132,35 @@ footer.headerfoot p{
 			}
 
 	}
+
+	.bottomdiv {
+		pointer-events: none;
+		padding-top: 9em;
+
+	  }
+	  
+	  .bottomc {
+
+		margin: 0 auto;
+		max-width: calc(100% - 4.5em);
+		width: 45em;
+	}
+	.bottomc h3{
+    margin-bottom: 0;
+
+
+	}
+
+		@media screen and (max-width: 1024px) {
+
+			.bottomc {
+				width: 100% !important;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.bottomc {
+				max-width: calc(100% - 3.375em);
+			}
